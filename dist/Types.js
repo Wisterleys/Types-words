@@ -29,14 +29,3 @@ var Types = /** @class */ (function () {
     };
     return Types;
 }());
-/* const words = document.querySelector("#words");
-let small_words = words.dataset.words.split(',').map(function (word) {
-    return word.split(" ")
-  })
-  let conuter = small_words.length
-  let counterTwo =0
-  setInterval(function(){
-      counterTwo>=conuter?counterTwo=0:0
-    words.innerHTML=small_words[counterTwo]
-    counterTwo++
-  },1000) */ 
