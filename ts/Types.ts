@@ -11,6 +11,7 @@ class Types{
   private counter:number = 0;
   private counterTwo:number = 0;
   private loop_all:number=0;
+
   constructor(obj:ObjParams){
     this.speed = obj.speed;
     this.el = obj.el
@@ -19,13 +20,14 @@ class Types{
     this.loopAll()
   }
   public loopAll(){
+    let real_speed = this.speed*1000 //Transformando milesegundos em segundos
     let val  = this.getDataSet();
     this.counter = val.length
     this.loop_all = setInterval(()=>{
       this.counterTwo>=this.counter?this.counterTwo=0:0
       this.el.innerHTML = val[this.counterTwo]
       this.counterTwo++;
-    },1000)
+    },real_speed)
     console.log(this.getDataSet())
   }
 

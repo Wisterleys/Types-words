@@ -1,5 +1,5 @@
 
 new Types({
     el:document.querySelector("#types"),
-    speed:50
+    speed:1
 })
